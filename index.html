@@ -1,296 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serengeti Crest — A Five-Star Retreat on the Tanzanian Coast</title>
-  <meta name="description" content="Serengeti Crest is a five-star hotel offering oceanfront suites, fine dining, and a private spa on the Tanzanian coast." />
-
-  <!-- Linked external CSS file -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baobab Kitchen — Dar es Salaam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ HEADER / NAVIGATION ============ -->
-  <header class="site-header" id="site-header">
-    <nav class="navbar">
-      <a href="#top" class="logo">Serengeti <span>Crest</span></a>
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">🌿<span>Baobab</span>Kitchen</a>
+    <ul class="nav-links">
+      <li><a href="#order">Order Online</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#rooms">Rooms &amp; Suites</a></li>
-        <li><a href="#amenities">Amenities</a></li>
-        <li><a href="#testimonials">Guest Stories</a></li>
-        <li><a href="#booking">Contact</a></li>
-      </ul>
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">Dar es Salaam · Est. 2019</span>
+    <h1>Coastal fire, <em>home-style</em> flavor.</h1>
+    <p>Slow-grilled nyama choma, fresh kachumbari, and Swahili coast classics — cooked the way Bibi taught us, served the way the neighborhood deserves.</p>
+    <div class="hero-ctas">
+      <a href="#order" class="btn btn-primary">Order Online →</a>
+      <a href="#menu" class="btn btn-ghost">View Menu</a>
+    </div>
+  </div>
+</header>
 
-      <a href="#booking" class="nav-cta">Reserve a Stay</a>
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">From the Grill</span>
+      <h2>Our Menu</h2>
+      <p>Every plate built around what's freshest at the market that morning.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card" data-tag="Best Seller">
+        <h3>Nyama Choma Plates</h3>
+        <div class="menu-item">
+          <span class="menu-item-name">Grilled Goat Ribs<small>Served with kachumbari & ugali</small></span>
+          <span class="menu-item-price">12,000 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Chicken Choma<small>Half chicken, charcoal grilled</small></span>
+          <span class="menu-item-price">10,500 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Beef Mishikaki Skewers<small>4 skewers, peanut dip</small></span>
+          <span class="menu-item-price">8,000 TZS</span>
+        </div>
+      </div>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
-    </nav>
-  </header>
+      <div class="menu-card" data-tag="Coastal">
+        <h3>Swahili Classics</h3>
+        <div class="menu-item">
+          <span class="menu-item-name">Pilau ya Nyama<small>Spiced rice with beef</small></span>
+          <span class="menu-item-price">9,000 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Samaki wa Kupaka<small>Coconut-grilled fish</small></span>
+          <span class="menu-item-price">13,500 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Coconut Bean Stew<small>Maharage ya nazi, served with rice</small></span>
+          <span class="menu-item-price">7,000 TZS</span>
+        </div>
+      </div>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top">
-    <div class="wrap hero-content">
-      <p class="eyebrow">Five-Star Hospitality · Indian Ocean Coast</p>
-      <h1>Where the tide meets <em>quiet luxury.</em></h1>
-      <p>Serengeti Crest pairs barefoot coastal calm with five-star detail — oceanfront suites, a private chef's table, and a spa built around the rhythm of the tide. Forty rooms, one horizon.</p>
-      <div class="btn-row">
-        <a href="#booking" class="btn btn-primary">Check Availability</a>
-        <a href="#rooms" class="btn btn-ghost">Explore Suites</a>
+      <div class="menu-card" data-tag="Fresh">
+        <h3>Sides & Salads</h3>
+        <div class="menu-item">
+          <span class="menu-item-name">Kachumbari<small>Tomato, onion, chili, lime</small></span>
+          <span class="menu-item-price">2,500 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Chips Mayai<small>Fries baked into omelette</small></span>
+          <span class="menu-item-price">6,000 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Sukuma Wiki<small>Sautéed collard greens</small></span>
+          <span class="menu-item-price">3,000 TZS</span>
+        </div>
+      </div>
+
+      <div class="menu-card" data-tag="Drinks">
+        <h3>To Drink</h3>
+        <div class="menu-item">
+          <span class="menu-item-name">Fresh Tamarind Juice<small>Sweet & tangy, house-made</small></span>
+          <span class="menu-item-price">3,000 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Ginger & Lemongrass<small>Hot or iced</small></span>
+          <span class="menu-item-price">2,800 TZS</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Stoney Tangawizi<small>Chilled bottle</small></span>
+          <span class="menu-item-price">2,000 TZS</span>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <div class="horizon"></div>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about">
-    <div class="wrap about-grid">
-      <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=900&auto=format&fit=crop" alt="Open-air hotel lounge with ocean view at golden hour" />
+<!-- LOCATION -->
+<section class="location-section" id="location">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Find Us</span>
+      <h2>Our Location</h2>
+      <p>Right off Toure Drive, two minutes' walk from Coco Beach.</p>
+    </div>
+    <div class="location-grid">
+      <div class="location-info">
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>Toure Drive, Oysterbay, Dar es Salaam, Tanzania</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🕒</div>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>Mon – Sun: 11:00 AM – 12:00 PM</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Phone & WhatsApp</h4>
+            <p>+255 788 285 317</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🚗</div>
+          <div>
+            <h4>Parking</h4>
+            <p>Free parking available on-site for dine-in guests</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="eyebrow">Our Story</p>
-        <h2>Built on the shoreline, not just beside it.</h2>
-        <p style="margin-top:18px; color:rgba(242,236,221,0.74); font-size:1.02rem; max-width:480px;">
-          Serengeti Crest was raised from local coral stone and dhow timber, shaped by the same craftsmen who have worked this coastline for generations. Every suite faces the water. Every evening ends the same way — gin and tonic in hand, watching the sky do something it has never done quite the same way twice.
-        </p>
+      <div class="map-frame">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=39.27%2C-6.78%2C39.30%2C-6.76&layer=mapnik&marker=-6.77%2C39.285"
+          loading="lazy"
+          title="Map showing Baobab Kitchen location in Dar es Salaam">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section class="explore-section" id="explore">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">A Taste, In Pictures</span>
+      <h2>Explore Baobab Kitchen</h2>
+      <p>The grill, the garden seating, and the dishes our regulars keep coming back for.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=900&auto=format&fit=crop" alt="Grilled nyama choma platter">
+        <div class="gallery-cap">Nyama Choma fresh off the grill</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=700&auto=format&fit=crop" alt="Restaurant outdoor garden seating">
+        <div class="gallery-cap">Garden seating</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=700&auto=format&fit=crop" alt="Fresh tropical fruit juice">
+        <div class="gallery-cap">House-made juices</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?q=80&w=700&auto=format&fit=crop" alt="Charcoal grill cooking skewers">
+        <div class="gallery-cap">The charcoal grill</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=700&auto=format&fit=crop" alt="Plated coastal rice dish">
+        <div class="gallery-cap">Pilau, plated</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <img src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e?q=80&w=900&auto=format&fit=crop" alt="Chef grilling meat over charcoal at Baobab Kitchen">
+      <div class="about-text">
+        <span class="eyebrow">Our Story</span>
+        <h2>Family recipes, neighborhood table.</h2>
+        <p>Baobab Kitchen started in 2019 as a single charcoal grill outside Mama Fatuma's house in Oysterbay. Neighbors kept asking for "just one more skewer" until the grill became a kitchen, and the kitchen became a home for anyone craving real nyama choma.</p>
+        <p>Every recipe on our menu has been passed down, tasted, and approved by the family before it ever reaches your plate. We still buy from the same fish market and the same butcher we did on day one.</p>
         <div class="about-stats">
           <div>
-            <span class="stat-num">40</span>
-            <span class="stat-label">Ocean Suites</span>
+            <div class="stat-num">6</div>
+            <div class="stat-label">Years Open</div>
           </div>
           <div>
-            <span class="stat-num">5.0</span>
-            <span class="stat-label">Guest Rating</span>
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Dishes</div>
           </div>
           <div>
-            <span class="stat-num">12</span>
-            <span class="stat-label">Years Open</span>
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Local Sourced</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ ROOMS & SUITES ============ -->
-  <section class="section-alt" id="rooms">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Rooms &amp; Suites</p>
-        <h2>Four ways to wake up to the ocean.</h2>
-        <p>Each room is oriented for first light and sea breeze, finished in raw linen, brass, and reclaimed dhow wood.</p>
+<!-- ORDER ONLINE -->
+<section class="order-section" id="order">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Hungry Now?</span>
+      <h2>Order Online</h2>
+      <p>Fill in your details and we'll confirm your order on WhatsApp within minutes.</p>
+    </div>
+
+    <div class="order-wrap">
+      <div class="order-side">
+        <h3>How it works</h3>
+        <p>No app needed — just tell us what you're craving.</p>
+        <ul>
+          <li>Submit your order using the form</li>
+          <li>We confirm by call or WhatsApp</li>
+          <li>Pickup in 25 mins, or delivery within Dar in under an hour</li>
+          <li>Pay on delivery or pickup — cash or mobile money</li>
+        </ul>
       </div>
 
-      <div class="room-grid">
-        <article class="room-card">
-          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop" alt="Garden View Room interior" />
-          <div class="room-body">
-            <h3>Garden Room</h3>
-            <p>Ground-floor retreat opening onto the palm courtyard, with an outdoor rain shower.</p>
-            <div class="room-meta">
-              <span class="room-price">$240<span> / night</span></span>
-              <a href="#booking" class="room-link">Reserve</a>
-            </div>
+      <form class="order-form" id="orderForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Erick Mwakipesile" required>
           </div>
-        </article>
-
-        <article class="room-card">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop" alt="Ocean View Suite interior" />
-          <div class="room-body">
-            <h3>Ocean Suite</h3>
-            <p>Floor-to-ceiling views over the bay, a private balcony, and a soaking tub for two.</p>
-            <div class="room-meta">
-              <span class="room-price">$390<span> / night</span></span>
-              <a href="#booking" class="room-link">Reserve</a>
-            </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0754 000 111" required>
           </div>
-        </article>
+        </div>
 
-        <article class="room-card">
-          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop" alt="Crest Villa with private pool" />
-          <div class="room-body">
-            <h3>Crest Villa</h3>
-            <p>A standalone villa with a private plunge pool and dedicated butler service.</p>
-            <div class="room-meta">
-              <span class="room-price">$680<span> / night</span></span>
-              <a href="#booking" class="room-link">Reserve</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ AMENITIES ============ -->
-  <section id="amenities">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">On the Grounds</p>
-        <h2>Everything a five-star stay should hold.</h2>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="amenity-grid">
-        <div class="amenity-card">
-          <span class="amenity-icon">✦</span>
-          <h3>Tideline Spa</h3>
-          <p>Treatments timed to the tide, with an open-air massage deck over the water.</p>
-        </div>
-        <div class="amenity-card">
-          <span class="amenity-icon">✦</span>
-          <h3>Dhow Table</h3>
-          <p>A chef's table built inside a restored fishing dhow, six seats, one tasting menu nightly.</p>
-        </div>
-        <div class="amenity-card">
-          <span class="amenity-icon">✦ </span>
-          <h3>Infinity Pool</h3>
-          <p>A 32-metre pool set flush with the horizon, open until midnight.</p>
-        </div>
-        <div class="amenity-card">
-          <span class="amenity-icon">✦</span>
-          <h3>Private Dhow Charter</h3>
-          <p>Sunset sails and snorkeling trips aboard our own fleet of traditional dhows.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="horizon"></div>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section id="testimonials">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Guest Stories</p>
-        <h2>What people remember after they leave.</h2>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p class="testimonial-stars">★★★★★</p>
-          <p>"We stopped checking the time after the first day. Every meal felt like it was built around the colour of the sky that night."</p>
-          <p class="testimonial-name">Amara N.</p>
-          <p class="testimonial-origin">Lagos, Nigeria</p>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-stars">★★★★★</p>
-          <p>"The dhow dinner is worth the trip alone. Quiet, personal service without ever feeling staged."</p>
-          <p class="testimonial-name">Daniel K.</p>
-          <p class="testimonial-origin">Dar es Salaam, Tanzania</p>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-stars">★★★★★</p>
-          <p>"Our villa's plunge pool looked straight out at the bay. I have not slept that well in years."</p>
-          <p class="testimonial-name">Helena V.</p>
-          <p class="testimonial-origin">Lisbon, Portugal</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ BOOKING / CONTACT ============ -->
-  <section class="booking" id="booking">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Reserve Your Stay</p>
-        <h2>Check availability at Serengeti Crest.</h2>
-        <p>Tell us your dates — our reservations team replies within a day.</p>
-      </div>
-
-      <form class="booking-form" action="#" method="get">
-        <div class="field">
-          <label for="checkin">Check-in</label>
-          <input type="date" id="checkin" name="checkin" />
-        </div>
-        <div class="field">
-          <label for="checkout">Check-out</label>
-          <input type="date" id="checkout" name="checkout" />
-        </div>
-        <div class="field">
-          <label for="guests">Guests</label>
-          <select id="guests" name="guests">
-            <option>1 Guest</option>
-            <option>2 Guests</option>
-            <option>3 Guests</option>
-            <option>4+ Guests</option>
+        <div class="field full">
+          <label for="dish">What would you like?</label>
+          <select id="dish" name="dish" required>
+            <option value="" disabled selected>Select a dish</option>
+            <option value="goat-ribs">Grilled Goat Ribs</option>
+            <option value="chicken-choma">Chicken Choma</option>
+            <option value="mishikaki">Beef Mishikaki Skewers</option>
+            <option value="pilau">Pilau ya Nyama</option>
+            <option value="samaki">Samaki wa Kupaka</option>
+            <option value="bean-stew">Coconut Bean Stew</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Check Availability</button>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="qty">Quantity</label>
+            <input type="number" id="qty" name="qty" min="1" value="1" required>
+          </div>
+          <div class="field">
+            <label>Order Type</label>
+            <div class="radio-row">
+              <span class="radio-option">
+                <input type="radio" id="pickup" name="orderType" value="pickup" checked>
+                <label for="pickup" style="font-weight:400;">Pickup</label>
+              </span>
+              <span class="radio-option">
+                <input type="radio" id="delivery" name="orderType" value="delivery">
+                <label for="delivery" style="font-weight:400;">Delivery</label>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="address">Delivery Address (if applicable)</label>
+          <input type="text" id="address" name="address" placeholder="Street, area, landmark">
+        </div>
+
+        <div class="field full">
+          <label for="notes">Special Notes</label>
+          <textarea id="notes" name="notes" placeholder="Spice level, allergies, anything else we should know"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Place Order →</button>
+        <p class="form-note">We'll text you to confirm before preparing your order.</p>
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#top" class="logo">Serengeti <span>Crest</span></a>
-          <p>A five-star retreat on the Tanzanian coast — oceanfront suites, private dining, and a spa built around the tide.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#rooms">Rooms &amp; Suites</a></li>
-            <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#testimonials">Guest Stories</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Reservations</h4>
-          <ul>
-            <li><a href="#booking">Check Availability</a></li>
-            <li><a href="tel:+255788285317">+255 788 285 317</a></li>
-            <li><a href="mailto:stay@serengeticrest.com">stay@serengeticrest.com</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Follow</h4>
-          <ul>
-            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 Serengeti Crest. All rights reserved.</p>
-        <p>Sokoine Drive, Tanzania</p>
-      </div>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <a href="#home" class="brand">🌿<span>Baobab</span>Kitchen</a>
+    <div class="footer-links">
+      <a href="#order">Order Online</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Location</a>
+      <a href="#explore">Explore</a>
+      <a href="#about">About Us</a>
     </div>
-  </footer>
+    <p class="fine">© 2026 Baobab Kitchen, Dar es Salaam. All rights reserved.</p>
+  </div>
+</footer>
 
-  <script>
-    // Mobile nav toggle
-    const toggle = document.getElementById('nav-toggle');
-    const header = document.getElementById('site-header');
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
 
-    toggle.addEventListener('click', () => {
-      const isOpen = header.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+  });
 
-    // Close mobile menu after clicking a link
-    document.querySelectorAll('.nav-links a, .nav-cta').forEach((link) => {
-      link.addEventListener('click', () => {
-        header.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+  // Close mobile menu after clicking a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => mainNav.classList.remove('open'));
+  });
+
+  // Simple form submit feedback (no backend yet)
+  const orderForm = document.getElementById('orderForm');
+  orderForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    alert(`Thanks, ${name}! Your order has been received. We'll confirm shortly by phone or WhatsApp.`);
+    orderForm.reset();
+  });
+</script>
 
 </body>
 </html>
